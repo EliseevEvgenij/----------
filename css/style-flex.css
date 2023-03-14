@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+div.parent {
+    height: 80px;
+    border: 1px solid red;
+    display: flex;    /* выравнивание по горизонт*/
+    justify-content: space-around; /* centr тут и так можно*/
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(https://oir.mobi/uploads/posts/2021-03/1616539215_59-p-pastelnie-tona-fon-63.jpg);
+
+}
+ .parent div:nth-child(2){
+    
+    color: aqua;
+}

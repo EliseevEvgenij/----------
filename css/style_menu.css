@@ -1,0 +1,41 @@
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif; /* все буквы без нижних засечек */
+}
+.container {
+    width: 1170px;
+    margin: 0 auto; /* отступ сверху и снизу 0. а авто-отступ по бокам */
+    /*background-color: #aceef3 ;  фон всего контейнера если надо     */
+}
+.menu__inner {
+    margin: 0px 0;  /* отступ всего меню 15px-сверху и снизу  и сбоку 0  */
+    display: flex;
+    justify-content: space-between;  /* раздвигает блоки от центра слева и справа */
+    align-items: center; /* выравнивание по вертикали.теперь имдж посередине относительно меню */
+    text-align: center;
+}
+.nav {
+    display: flex; /* выровнял блок текста меню по горизонтали */
+    list-style: none; /* убирает круглишки от списка меню которые изначально были */
+    padding: 0;
+    margin: 0;
+    
+}
+.nav li a{
+    text-transform: uppercase; /* все буквы заглавные */
+    color: #999;  /* цвет букв */
+    text-decoration: none;  /* подчёркивание ссылок снизу - убрать  */
+    padding: 10px 20px;   /* отступы между каждым "li(менюшки)"  */
+    
+}
+.nav li a:hover{  /* создал псевдо-класс */
+    background-color: rgb(69, 102, 194); /* цвет кнопок меню при наведении */
+    color: #fff;  /* цвет текта кнопок меню при наведении */
+    border-radius: 5px;     /* закругление фона при наведении */
+
+}           
+
+
+/*.menu {
+    border: 1px solid red; }  /* бордер(рамка) всего блока меню  для понимания блока можно вкл */

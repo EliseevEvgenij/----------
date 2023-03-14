@@ -1,0 +1,73 @@
+:root {
+    --gutter: 20px;   /* создание переменной 
+    в css (отступ между ячейками 20px)*/
+    --bg: hsl(180, 100%, 25%); /* переменная внутри которой цвет */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+}
+body,p,h1,h2,h3,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: var(--bg); /* вызвал переменную цвета */
+}
+
+
+/* ниже медиа запросы для адаптации под размеры
+они пишутся в самом низу после всех стилей*//* все экраны менее 992px будут применятся эти стили
+ /screen eto экран
+ lg-это ссуфикс который говорит что большой экран
+ md- средние экраны
+ sm- маленькие экраны*/
+@media screen and (max-width:992px) {
+    .container{
+        max-width: 100%;
+    }
+    .col-lg-12 {
+        width: calc(100% - var(--gutter));
+    }
+    .col-lg-6 {
+        width: calc(50% - var(--gutter));
+    }
+    .col-lg-4 {
+        width: calc(33.33% - var(--gutter));
+    }
+    .col-lg-3 {
+        width: calc(25% - var(--gutter));
+    }
+
+} 
+ @media screen and (max-width:768px) {
+    .col-md-12 {
+        width: calc(100% - var(--gutter));
+    }
+    .col-md-6 {
+        width: calc(50% - var(--gutter));
+    }
+    .col-md-4 {
+        width: calc(33.33% - var(--gutter));
+    }
+    .col-md-3 {
+        width: calc(25% - var(--gutter));
+    }
+}
+@media screen and (max-width:576px) {
+    .col-sm-12 {
+        width: calc(100% - var(--gutter));
+    }
+    .col-sm-6 {
+        width: calc(50% - var(--gutter));
+    }
+    .col-sm-4 {
+        width: calc(33.33% - var(--gutter));
+    }
+    .col-sm-3 {
+        width: calc(25% - var(--gutter));
+    }
+}

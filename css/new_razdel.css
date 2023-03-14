@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif; /* все буквы без нижних засечек */
+}
+.container_new {
+    width: 1170px;
+    margin: auto;
+    
+}
+.box_new {
+    background-color: #f3f3f3;
+}
+.box__inner{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    
+}
+/*.box{border: red solid 1px;}   рамка для наглядности*/
+h1.new {
+    max-width: 750px;       /* максимальная ширина обьекта */
+    margin: 80px auto 30px; /* 80-отступ сверху
+                               auto-отступ по бокам
+                               30-отступ снизу */
+    line-height: 45px;      /* отступ между строчек блока */
+    font-weight: normal;    /* убрать жирный шрифт*/
+}
+p.new_razd {
+    min-width: 900px;
+    margin: 0 auto 60px;
+    line-height: 30px;
+}
+.icon_box {
+    margin-bottom: 60px;      /* отступ снизу от блока */
+}
+.icon_box i.fa {
+    color: rgb(26,152,156); 
+    font-size: 80px;
+    margin: 0 55px;
+}
+

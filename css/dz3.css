@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif; /* все буквы без нижних засечек */
+}
+.razdel {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:   #f3f3f3;
+}
+.container_fail {
+    width: 1170px;
+    margin: auto;
+    
+}
+.container_razdela{
+    
+    display: flex;
+    align-items: center;
+
+    text-align:justify;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 470px;
+
+}
+.text_fail {
+    padding: 0px 30px; 
+}
+h2.fail{
+    max-width: 350px;
+    font-weight: normal;
+    font-size: 20px;
+   
+}
+#t {
+    max-width: 350px;
+    line-height: 20px;
+}
+
